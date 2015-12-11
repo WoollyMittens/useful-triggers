@@ -57,19 +57,14 @@ var triggers = new useful.Triggers().init({
 
 **nav : {CSS Rule}** - The optional floating navigation bar underneath the header bar.
 
-**article#ipsum : {string}** - The element which' position is used as a trigger.
+**article#ipsum : {String}** - The element which' position is used as a trigger.
 
-**element : {CSS Rule}** - The element affected by the trigger.
-
-**class: {ClassName}** - The class name to add to the affected element.
-
-**delay: {Integer}** - A delay after which the effect takes place.
-
-**from: {Percentage}** - The percentage from the top of the screen at which the effect is triggered.
-
-**to: {Percentage}** - The percentage from the top of the screen at which the effect is cancelled.
-
-**overscan: {Boolean}** - Whether the element has to leave the top of the screen completely for 100%.
++ *element : {CSS Rule}* - The element affected by the trigger.
++ *class: {ClassName}* - The class name to add to the affected element.
++ *delay: {Integer}* - A delay after which the effect takes place.
++ *from: {Percentage}* - The percentage from the top of the screen at which the effect is triggered.
++ *to: {Percentage}* - The percentage from the top of the screen at which the effect is cancelled.
++ *overscan: {Boolean}* - Whether the element has to leave the top of the screen completely for 100%.
 
 ## How to build the script
 
