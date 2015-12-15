@@ -20,6 +20,8 @@ var gulp = require('gulp'),
 gulp.task('import', function () {
   gulp.src('../useful-polyfills/src/js/*.js', {base: '../useful-polyfills/src/js/'})
     .pipe(gulp.dest('src/lib/'));
+  gulp.src('../useful-gestures/src/js/*.js', {base: '../useful-gestures/src/js/'})
+    .pipe(gulp.dest('src/lib/'));
 });
 
 // server
@@ -66,6 +68,9 @@ gulp.task('markup', function () {
   gulp.src('src/php/**/*.php')
     .pipe(special())
     .pipe(gulp.dest('dist/php/'));
+  gulp.src('src/json/**/*.js')
+    .pipe(special())
+    .pipe(gulp.dest('dist/json/'));
 });
 
 gulp.task('assets', function () {
@@ -78,7 +83,7 @@ gulp.task('assets', function () {
 });
 
 gulp.task('images', function () {
-  gulp.src(['src/img/**/*.png', 'src/img/**/*.jpg', 'src/img/**/*.svg'])
+  gulp.src(['src/img/**/*.gif', 'src/img/**/*.png', 'src/img/**/*.jpg', 'src/img/**/*.svg'])
     .pipe(imagemin({
         progressive: true,
         svgoPlugins: [{removeViewBox: true}],
@@ -119,7 +124,7 @@ gulp.task('scripts:dist', function() {
 // watch changes
 
 gulp.task('watch', function () {
-  gulp.watch(['./src/**/*.html', './src/**/*.php'], ['markup']);
+  gulp.watch(['./src/*.html'], ['markup']);
   gulp.watch(['./src/scss/*.scss'], ['styles:dev']);
   gulp.watch(['./src/js/*.js'], ['scripts:dev']);
   gulp.watch(['./dist/*.html'], ['html']);

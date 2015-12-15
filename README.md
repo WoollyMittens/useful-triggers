@@ -66,6 +66,18 @@ var triggers = new useful.Triggers().init({
 + *to: {Percentage}* - The percentage from the top of the screen at which the effect is cancelled.
 + *overscan: {Boolean}* - Whether the element has to leave the top of the screen completely for 100%.
 
+## How to control the script
+
+### Jump
+
+```javascript
+triggers.jump(hash);
+```
+
+Scrolls the page to the given anchor.
+
+**hash : {string}** - The id of the destination element on the page. e.g. Use #dolor to jump to <div id="dolor">
+
 ## How to build the script
 
 This project uses node.js from http://nodejs.org/
