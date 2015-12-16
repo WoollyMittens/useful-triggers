@@ -2,7 +2,7 @@
 
 Elements that change their appearance when scrolled into view.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-triggers">demo</a>.
+Try the <a href="http://www.woollymittens.nl/default.php?url=useful-triggers">demo</a>.
 
 ## How to include the script
 
