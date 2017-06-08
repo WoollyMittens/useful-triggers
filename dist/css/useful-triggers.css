@@ -41,6 +41,7 @@ body {
   min-height: 100%;
   padding: 0; }
   body * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
 section {
@@ -86,6 +87,7 @@ section {
     padding-bottom: 0rem;
     padding-left: 12px;
     padding-left: 1rem;
+    -webkit-box-shadow: 0 1px 3px #999;
     box-shadow: 0 1px 3px #999;
     background-color: #ff6a00;
     color: #fff;
@@ -95,6 +97,7 @@ section {
     section nav .notification {
       float: right;
       opacity: 0;
+      -webkit-transition: opacity ease 500ms;
       transition: opacity ease 500ms; }
       section nav .notification.revealed {
         opacity: 1; }
@@ -111,6 +114,7 @@ section {
       padding-bottom: 0rem;
       padding-left: 12px;
       padding-left: 1rem;
+      -webkit-transition: background-color ease 500ms;
       transition: background-color ease 500ms;
       color: #fff;
       display: inline-block;
@@ -133,6 +137,7 @@ section {
     background: #fff; }
     section article figure {
       background-color: Red;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       color: #fff;
       float: right;
@@ -143,6 +148,7 @@ section {
       font-size: 32px; }
     section article .stage-0, section article .stage-1, section article .stage-2 {
       opacity: 0;
+      -webkit-transition: opacity ease 500ms;
       transition: opacity ease 500ms; }
       section article .stage-0.revealed, section article .stage-1.revealed, section article .stage-2.revealed {
         opacity: 1; }
