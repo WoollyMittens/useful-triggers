@@ -29,17 +29,17 @@ section {
 		margin: 0 auto;
 	}
 	header {
-		@include rem('height', 6);
-		@include rems('padding', 1, 1, 1, 1);
-		@include rems('margin', 0, 0, 3, 0);
+		height: 6rem;
+		padding: 1rem;
+		margin: 0 0 3rem;
 		background: $color-disabled;
 		color: #fff;
 	}
 	nav {
-		@include rem('top', 6);
-		@include rem('height', 3);
-		@include rem('line-height', 3);
-		@include rems('padding', 0, 1, 0, 1);
+		top: 6rem;
+		height: 3rem;
+		line-height: 3rem;
+		padding: 0rem 1rem;
 		box-shadow: 0 1px 3px #999;
 		background-color: $color-passive;
 		color: #fff;
@@ -55,9 +55,9 @@ section {
 			}
 		}
 		a {
-			@include rem('height', 3);
-			@include rem('line-height', 3);
-			@include rems('padding', 0, 1, 0, 1);
+			height: 3rem;
+			line-height: 3rem;
+			padding: 0 1rem;
 			transition: background-color ease 500ms;
 			color: #fff;
 			display: inline-block;
@@ -73,7 +73,7 @@ section {
 		}
 	}
 	article {
-		@include rems('padding', 1, 1, 1, 1);
+		padding: 1rem;
 		background: #fff;
 		figure {
 			background-color: Red;
@@ -98,8 +98,8 @@ section {
 		}
 	}
 	footer {
-		@include rem('height', 6);
-		@include rems('padding', 1, 1, 1, 1);
+		height: 6rem;
+		padding: 1rem;
 		background: $color-disabled;
 		color: #fff;
 	}

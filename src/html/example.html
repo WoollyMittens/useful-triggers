@@ -2,13 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>useful.triggers.js: Animations triggered by the scroll position</title>
-		<link rel="stylesheet" href="../css/useful-triggers.css"/>
-		<!--[if lte IE 9]>
-			<meta http-equiv="imagetoolbar" content="no"/>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<title>triggers.js: Animations triggered by the scroll position</title>
+		<link rel="stylesheet" href="../css/triggers.css"/>
 	</head>
 	<body>
 		<section>
@@ -134,11 +129,11 @@
 				</div>
 			</footer>
 		</section>
-		<script src="../js/useful-triggers.js"></script>
+		<script src="../js/triggers.js"></script>
 		<script>
 		//<!--
 			// create a new instance of the script
-			var triggers = new useful.Triggers().init({
+			var triggers = new Triggers({
 				// the container of the scrolling content
 				"element" : window,
 				// continue monitoring elements after they go off screen

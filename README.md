@@ -1,4 +1,4 @@
-# useful.triggers.js: Animations Triggered by Scrolling.
+# triggers.js: Animations Triggered by Scrolling.
 
 Elements that change their appearance when scrolled into view.
 
@@ -9,27 +9,19 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-triggers">de
 The stylesheet is best included in the header of the document.
 
 ```html
-<link rel="stylesheet" href="./css/useful-triggers.css"/>
+<link rel="stylesheet" href="./css/triggers.css"/>
 ```
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-triggers.js"></script>
-```
-
-To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5.js*.
-
-```html
-<!--[if lte IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="./js/triggers.js"></script>
 ```
 
 ## How to start the script
 
 ```javascript
-var triggers = new useful.Triggers().init({
+var triggers = new Triggers({
 	// the container of the scrolling content
 	"element" : window,
 	// continue monitoring elements after they go off screen
