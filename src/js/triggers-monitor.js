@@ -58,8 +58,8 @@ Triggers.prototype.Monitor = function (context) {
 		// get the current scroll position
 		var a, b, reaction, reactions, onscreen, offscreen, progress, allowOffscreen = this.config.offscreen;
 		var element, elementTop, elementBottom, elementHeight, elementProgress, elements = this.config.elements;
-		var viewTop = useful.positions.document(evt.target).y,
-			viewBottom = viewTop + useful.positions.window(evt.target).y,
+		var viewTop = positions.document(evt.target).y,
+			viewBottom = viewTop + positions.window(evt.target).y,
 			viewHeight = viewBottom - viewTop;
 		// for all configured triggers
 		for (var name in elements) {

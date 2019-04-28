@@ -9,13 +9,32 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-triggers">de
 The stylesheet is best included in the header of the document.
 
 ```html
-<link rel="stylesheet" href="./css/triggers.css"/>
+<link rel="stylesheet" href="css/triggers.css"/>
 ```
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/triggers.js"></script>
+<script src="lib/positions.js"></script>
+<script src="js/triggers.js"></script>
+```
+
+Or use [Require.js](https://requirejs.org/).
+
+```js
+requirejs([
+	'lib/positions.js',
+	'js/triggers.js'
+], function(positions, Triggers) {
+	...
+});
+```
+
+Or import into an MVC framework.
+
+```js
+var positions = require('lib/positions.js');
+var Triggers = require('js/triggers.js');
 ```
 
 ## How to start the script

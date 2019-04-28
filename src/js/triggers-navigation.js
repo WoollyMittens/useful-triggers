@@ -72,7 +72,7 @@ Triggers.prototype.Navigation = function (context) {
 		this.scrollInterval = setInterval(function () {
 			// find the target position
 			var destination = target.offsetTop - navigation.offsetHeight;
-			var position = useful.positions.document(scroller);
+			var position = positions.document(scroller);
 			//console.log('navigate to:', destination, 'from', position.y);
 			// check if the scrolling has been stuck
 			if (position.y === _this.previous) { _this.stuck += 1; }

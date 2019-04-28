@@ -27,5 +27,5 @@ var Triggers = function (config) {
 };
 
 // return as a require.js module
-if (typeof define != 'undefined') define(['triggers'], function () { return Triggers });
+if (typeof define != 'undefined') define([], function () { return Triggers });
 if (typeof module != 'undefined') module.exports = Triggers;
